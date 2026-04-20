@@ -1,0 +1,514 @@
+ 64%|██████▍   | 540000/846180 [22:37:27<11:13:39,  7.58it/s]
+169236it [22:25:45, 24.37it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-540000
+{'eval_loss': 0.02075991965830326, 'eval_accuracy': 0.7371486704833337, 'epoch': 19.14}
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-540000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-540000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-490000] due to args.save_total_limit
+ 64%|██████▍   | 540125/846180 [22:37:45<10:28:12,  8.12it/s]
+
+ 64%|██████▍   | 545000/846180 [22:49:17<11:08:38,  7.51it/s]
+169236it [22:37:35, 24.37it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.019, 'learning_rate': 0.00017796449927911322, 'epoch': 19.32}
+{'eval_loss': 0.020472876727581024, 'eval_accuracy': 0.7444495421994375, 'epoch': 20.92}
+ 70%|██████▉   | 590000/846180 [24:43:42<9:04:42,  7.84it/s]
+184906it [24:32:00, 24.82it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-590000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-590000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-590000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-540000] due to args.save_total_limit
+ 70%|██████▉   | 590142/846180 [24:44:02<9:04:44,  7.83it/s]
+
+{'loss': 0.0181, 'learning_rate': 0.00014841995792857314, 'epoch': 21.09}
+ 70%|███████   | 595000/846180 [24:55:01<10:40:13,  6.54it/s]
+184906it [24:43:19, 24.82it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+
+ 70%|███████   | 595000/846180 [24:56:02<10:40:13,  6.54it/s]
+186473it [24:44:20, 25.36it/s]{'eval_loss': 0.02063097432255745, 'eval_accuracy': 0.7456264586782629, 'epoch': 21.09}
+ 70%|███████   | 595080/846180 [24:56:13<10:21:37,  6.73it/s]
+
+ 71%|███████   | 600000/846180 [25:07:24<9:50:36,  6.95it/s]
+186473it [24:55:42, 25.36it/s]
+{'loss': 0.0183, 'learning_rate': 0.0001454655037935191, 'epoch': 21.27}
+
+ 71%|███████   | 600000/846180 [25:08:25<9:50:36,  6.95it/s]
+188040it [24:56:43, 25.03it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-600000
+{'eval_loss': 0.020479505881667137, 'eval_accuracy': 0.7454469290458997, 'epoch': 21.27}
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-600000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-600000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-550000] due to args.save_total_limit
+ 71%|███████   | 600136/846180 [25:08:43<9:33:16,  7.15it/s]
+
+ 71%|███████▏  | 605000/846180 [25:19:39<9:09:22,  7.32it/s]
+188040it [25:07:57, 25.03it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0181, 'learning_rate': 0.0001425110496584651, 'epoch': 21.45}
+ 71%|███████▏  | 605000/846180 [25:20:40<9:09:22,  7.32it/s]
+189607it [25:08:58, 24.98it/s]{'eval_loss': 0.020578276365995407, 'eval_accuracy': 0.7441104306716403, 'epoch': 21.45}
+ 72%|███████▏  | 605099/846180 [25:20:54<9:02:29,  7.41it/s]
+
+ 72%|███████▏  | 610000/846180 [25:32:20<7:57:54,  8.24it/s]
+189607it [25:20:37, 24.98it/s]{'loss': 0.0182, 'learning_rate': 0.0001395565955234111, 'epoch': 21.63}
+{'eval_loss': 0.02046707458794117, 'eval_accuracy': 0.7430731483513195, 'epoch': 21.63}
+ 72%|███████▏  | 610000/846180 [25:33:24<7:57:54,  8.24it/s]
+191174it [25:21:41, 24.23it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-610000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-610000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-610000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-560000] due to args.save_total_limit
+ 72%|███████▏  | 610077/846180 [25:33:35<8:50:08,  7.42it/s]
+
+ 73%|███████▎  | 615000/846180 [25:45:15<9:43:58,  6.60it/s]
+191174it [25:33:32, 24.23it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0182, 'learning_rate': 0.0001366021413883571, 'epoch': 21.8}
+{'eval_loss': 0.020290672779083252, 'eval_accuracy': 0.7471225389479563, 'epoch': 21.8}
+ 73%|███████▎  | 615000/846180 [25:46:19<9:43:58,  6.60it/s]
+192741it [25:34:36, 24.11it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\best_cp-615000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\best_cp-615000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\best_cp-615000\pytorch_model.bin
+ 73%|███████▎  | 615120/846180 [25:46:35<9:28:26,  6.77it/s]
+
+ 73%|███████▎  | 620000/846180 [25:58:12<9:17:20,  6.76it/s]
+192741it [25:46:30, 24.11it/s]{'loss': 0.018, 'learning_rate': 0.0001336476872533031, 'epoch': 21.98}
+ 73%|███████▎  | 620000/846180 [25:59:17<9:17:20,  6.76it/s]
+194308it [25:47:35, 23.06it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\best_cp-620000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\best_cp-620000\config.json
+{'eval_loss': 0.020263975486159325, 'eval_accuracy': 0.7462448385230696, 'epoch': 21.98}
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\best_cp-620000\pytorch_model.bin
+Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-620000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-620000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-620000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-570000] due to args.save_total_limit
+ 73%|███████▎  | 620129/846180 [25:59:36<8:26:39,  7.44it/s]
+
+{'loss': 0.0175, 'learning_rate': 0.00013069323311824907, 'epoch': 22.16}
+ 74%|███████▍  | 625000/846180 [26:11:15<8:52:03,  6.93it/s]
+194308it [25:59:33, 23.06it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+ 74%|███████▍  | 625000/846180 [26:12:19<8:52:03,  6.93it/s]
+195875it [26:00:37, 24.40it/s]{'eval_loss': 0.0202871672809124, 'eval_accuracy': 0.745865831521414, 'epoch': 22.16}
+ 74%|███████▍  | 625121/846180 [26:12:36<9:12:12,  6.67it/s]
+
+{'loss': 0.0177, 'learning_rate': 0.00012773877898319508, 'epoch': 22.34}
+ 74%|███████▍  | 630000/846180 [26:24:11<9:05:34,  6.60it/s]
+ {'eval_loss': 0.020115157589316368, 'eval_accuracy': 0.7454070335720413, 'epoch': 22.34}
+ 74%|███████▍  | 630000/846180 [26:25:16<9:05:34,  6.60it/s]
+197442it [26:13:33, 24.30it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\best_cp-630000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\best_cp-630000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\best_cp-630000\pytorch_model.bin
+Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-630000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-630000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-630000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-580000] due to args.save_total_limit
+ 74%|███████▍  | 630079/846180 [26:25:27<7:47:32,  7.70it/s]
+
+{'loss': 0.0177, 'learning_rate': 0.00012478432484814105, 'epoch': 22.51}
+ 75%|███████▌  | 635000/846180 [26:37:08<7:58:59,  7.35it/s]
+  75%|███████▌  | 635000/846180 [26:38:09<7:58:59,  7.35it/s]
+199009it [26:26:26, 24.88it/s]{'eval_loss': 0.020159216597676277, 'eval_accuracy': 0.7466238455247253, 'epoch': 22.51}
+ 75%|███████▌  | 635143/846180 [26:38:28<7:13:02,  8.12it/s]
+
+ 76%|███████▌  | 640000/846180 [26:49:30<7:38:15,  7.50it/s]
+199009it [26:37:48, 24.88it/s]
+{'loss': 0.0175, 'learning_rate': 0.00012182987071308706, 'epoch': 22.69}
+
+{'eval_loss': 0.020255880430340767, 'eval_accuracy': 0.74782070974048, 'epoch': 22.69}
+ 76%|███████▌  | 640000/846180 [26:50:31<7:38:15,  7.50it/s]
+200576it [26:38:49, 25.03it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-640000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-640000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-640000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-590000] due to args.save_total_limit
+ 76%|███████▌  | 640143/846180 [26:50:50<6:52:48,  8.32it/s]
+
+ 76%|███████▌  | 645000/846180 [27:01:57<7:48:25,  7.16it/s]
+200576it [26:50:15, 25.03it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0179, 'learning_rate': 0.00011887541657803304, 'epoch': 22.87}
+{'eval_loss': 0.02027682587504387, 'eval_accuracy': 0.7489976262193054, 'epoch': 22.87}
+ 76%|███████▌  | 645000/846180 [27:02:58<7:48:25,  7.16it/s]
+ 76%|███████▌  | 645093/846180 [27:03:11<7:32:51,  7.40it/s]
+
+ 77%|███████▋  | 650000/846180 [27:14:23<7:34:17,  7.20it/s]
+202143it [27:02:41, 25.00it/s]{'loss': 0.0177, 'learning_rate': 0.00011592096244297903, 'epoch': 23.04}
+{'eval_loss': 0.020384792238473892, 'eval_accuracy': 0.7490774171670224, 'epoch': 23.04}
+ 77%|███████▋  | 650000/846180 [27:15:25<7:34:17,  7.20it/s]
+203710it [27:03:42, 24.73it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-650000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-650000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-650000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-600000] due to args.save_total_limit
+ 77%|███████▋  | 650129/846180 [27:15:42<6:58:29,  7.81it/s]
+
+ 77%|███████▋  | 655000/846180 [27:26:45<6:27:18,  8.23it/s]
+203710it [27:15:03, 24.73it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0172, 'learning_rate': 0.00011296650830792502, 'epoch': 23.22}
+ 77%|███████▋  | 655000/846180 [27:27:46<6:27:18,  8.23it/s]
+205277it [27:16:04, 24.93it/s]{'eval_loss': 0.02018498070538044, 'eval_accuracy': 0.7493965809578903, 'epoch': 23.22}
+ 77%|███████▋  | 655125/846180 [27:28:03<6:36:34,  8.03it/s]
+
+ 78%|███████▊  | 660000/846180 [27:39:01<6:37:32,  7.81it/s]
+205277it [27:27:19, 24.93it/s]
+{'loss': 0.0172, 'learning_rate': 0.00011001205417287103, 'epoch': 23.4}
+ 78%|███████▊  | 660000/846180 [27:40:02<6:37:32,  7.81it/s]
+206844it [27:28:20, 25.02it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-660000
+{'eval_loss': 0.02017085999250412, 'eval_accuracy': 0.7488579920608007, 'epoch': 23.4}
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-660000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-660000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-610000] due to args.save_total_limit
+ 78%|███████▊  | 660089/846180 [27:40:13<6:52:45,  7.51it/s]
+
+{'loss': 0.0174, 'learning_rate': 0.00010705760003781702, 'epoch': 23.58}
+ 79%|███████▊  | 665000/846180 [27:51:24<6:27:35,  7.79it/s]
+ {'eval_loss': 0.020198581740260124, 'eval_accuracy': 0.7493566854840318, 'epoch': 23.58}
+ 79%|███████▊  | 665000/846180 [27:52:26<6:27:35,  7.79it/s]
+ 79%|███████▊  | 665138/846180 [27:52:44<7:17:34,  6.90it/s]
+
+{'loss': 0.0172, 'learning_rate': 0.00010410314590276302, 'epoch': 23.75}
+ 79%|███████▉  | 670000/846180 [28:04:18<8:09:12,  6.00it/s]
+ {'eval_loss': 0.02008218504488468, 'eval_accuracy': 0.7500748040134847, 'epoch': 23.75}
+ 79%|███████▉  | 670000/846180 [28:05:22<8:09:12,  6.00it/s]
+209978it [27:53:40, 24.61it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\best_cp-670000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\best_cp-670000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\best_cp-670000\pytorch_model.bin
+Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-670000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-670000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-670000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-620000] due to args.save_total_limit
+ 79%|███████▉  | 670082/846180 [28:05:35<7:14:23,  6.76it/s]
+
+ 80%|███████▉  | 675000/846180 [28:17:18<6:04:06,  7.84it/s]
+209978it [28:05:36, 24.61it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0172, 'learning_rate': 0.000101148691767709, 'epoch': 23.93}
+ 80%|███████▉  | 675000/846180 [28:18:22<6:04:06,  7.84it/s]
+211545it [28:06:40, 24.57it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\best_cp-675000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\best_cp-675000\config.json
+{'eval_loss': 0.019969753921031952, 'eval_accuracy': 0.7510322953860884, 'epoch': 23.93}
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\best_cp-675000\pytorch_model.bin
+ 80%|███████▉  | 675087/846180 [28:18:35<6:21:04,  7.48it/s]
+
+ 80%|████████  | 680000/846180 [28:30:16<6:41:07,  6.90it/s]
+211545it [28:18:33, 24.57it/s]{'loss': 0.017, 'learning_rate': 9.819423763265498e-05, 'epoch': 24.11}
+ 80%|████████  | 680000/846180 [28:31:20<6:41:07,  6.90it/s]
+213112it [28:19:38, 23.60it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-680000
+{'eval_loss': 0.020211489871144295, 'eval_accuracy': 0.7513115637030979, 'epoch': 24.11}
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-680000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-680000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-630000] due to args.save_total_limit
+ 80%|████████  | 680108/846180 [28:31:36<5:43:12,  8.06it/s]
+
+ 81%|████████  | 685000/846180 [28:43:19<5:41:11,  7.87it/s]
+213112it [28:31:37, 23.60it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0168, 'learning_rate': 9.523978349760099e-05, 'epoch': 24.29}
+{'eval_loss': 0.020141975954174995, 'eval_accuracy': 0.7522690550757016, 'epoch': 24.29}
+ 81%|████████  | 685000/846180 [28:44:22<5:41:11,  7.87it/s]
+ 81%|████████  | 685108/846180 [28:44:36<6:17:44,  7.11it/s]
+
+ 82%|████████▏ | 690000/846180 [28:56:01<12:59:29,  3.34it/s]
+214679it [28:44:19, 24.55it/s]{'loss': 0.0168, 'learning_rate': 9.228532936254698e-05, 'epoch': 24.46}
+
+ 82%|████████▏ | 690000/846180 [28:57:05<12:59:29,  3.34it/s]
+216246it [28:45:23, 23.18it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\best_cp-690000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\best_cp-690000\config.json
+{'eval_loss': 0.019909296184778214, 'eval_accuracy': 0.750832818016796, 'epoch': 24.46}
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\best_cp-690000\pytorch_model.bin
+Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-690000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-690000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-690000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-640000] due to args.save_total_limit
+ 82%|████████▏ | 690082/846180 [28:57:17<5:48:51,  7.46it/s]
+
+ 82%|████████▏ | 695000/846180 [29:08:40<6:55:36,  6.06it/s]
+216246it [28:56:58, 23.18it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0167, 'learning_rate': 8.933087522749298e-05, 'epoch': 24.64}
+ 82%|████████▏ | 695000/846180 [29:09:41<6:55:36,  6.06it/s]
+217813it [28:57:59, 25.08it/s]{'eval_loss': 0.020087679848074913, 'eval_accuracy': 0.7519099958109753, 'epoch': 24.64}
+ 82%|████████▏ | 695123/846180 [29:09:58<6:24:45,  6.54it/s]
+
+{'loss': 0.0169, 'learning_rate': 8.637642109243895e-05, 'epoch': 24.82}
+ 83%|████████▎ | 700000/846180 [29:21:22<6:15:50,  6.48it/s]
+
+{'eval_loss': 0.01987437717616558, 'eval_accuracy': 0.7523488460234187, 'epoch': 24.82}
+ 83%|████████▎ | 700000/846180 [29:22:26<6:15:50,  6.48it/s]
+219380it [29:10:44, 24.24it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\best_cp-700000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\best_cp-700000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\best_cp-700000\pytorch_model.bin
+Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-700000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-700000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-700000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-650000] due to args.save_total_limit
+ 83%|████████▎ | 700090/846180 [29:22:38<5:39:34,  7.17it/s]
+
+ 83%|████████▎ | 705000/846180 [29:34:17<5:38:41,  6.95it/s]
+219380it [29:22:35, 24.24it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0171, 'learning_rate': 8.342196695738496e-05, 'epoch': 24.99}
+ 83%|████████▎ | 705000/846180 [29:35:22<5:38:41,  6.95it/s]
+220947it [29:23:39, 24.54it/s]{'eval_loss': 0.019985100254416466, 'eval_accuracy': 0.7519897867586922, 'epoch': 24.99}
+ 83%|████████▎ | 705123/846180 [29:35:39<6:12:51,  6.31it/s]
+
+ 84%|████████▍ | 710000/846180 [29:47:18<5:36:55,  6.74it/s]
+220947it [29:35:36, 24.54it/s]{'loss': 0.0165, 'learning_rate': 8.046751282233095e-05, 'epoch': 25.17}
+ 84%|████████▍ | 710000/846180 [29:48:22<5:36:55,  6.74it/s]
+222514it [29:36:40, 23.71it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-710000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-710000\config.json
+{'eval_loss': 0.01997227407991886, 'eval_accuracy': 0.753027069079013, 'epoch': 25.17}
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-710000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-660000] due to args.save_total_limit
+ 84%|████████▍ | 710114/846180 [29:48:39<5:07:37,  7.37it/s]
+
+ 84%|████████▍ | 715000/846180 [30:00:12<4:59:19,  7.30it/s]
+222514it [29:48:30, 23.71it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0165, 'learning_rate': 7.751305868727694e-05, 'epoch': 25.35}
+{'eval_loss': 0.020023511722683907, 'eval_accuracy': 0.752707905288145, 'epoch': 25.35}
+ 84%|████████▍ | 715000/846180 [30:01:16<4:59:19,  7.30it/s]
+ 85%|████████▍ | 715101/846180 [30:01:30<5:20:30,  6.82it/s]
+
+ 85%|████████▌ | 720000/846180 [30:13:09<4:15:23,  8.23it/s]
+224081it [30:01:27, 23.92it/s]
+{'loss': 0.0164, 'learning_rate': 7.455860455222294e-05, 'epoch': 25.53}
+ 85%|████████▌ | 720000/846180 [30:14:13<4:15:23,  8.23it/s]
+225648it [30:02:31, 23.88it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-720000
+{'eval_loss': 0.02002744935452938, 'eval_accuracy': 0.7535457102391734, 'epoch': 25.53}
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-720000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-720000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-670000] due to args.save_total_limit
+ 85%|████████▌ | 720129/846180 [30:14:31<4:08:58,  8.44it/s]
+
+ 86%|████████▌ | 725000/846180 [30:26:05<4:33:45,  7.38it/s]
+225648it [30:14:23, 23.88it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0163, 'learning_rate': 7.160415041716893e-05, 'epoch': 25.7}
+{'eval_loss': 0.020225683227181435, 'eval_accuracy': 0.7536454489238196, 'epoch': 25.7}
+ 86%|████████▌ | 725000/846180 [30:27:09<4:33:45,  7.38it/s]
+ 86%|████████▌ | 725088/846180 [30:27:21<4:58:35,  6.76it/s]
+
+{'loss': 0.0167, 'learning_rate': 6.864969628211492e-05, 'epoch': 25.88}
+ 86%|████████▋ | 730000/846180 [30:39:06<4:20:25,  7.44it/s]
+  86%|████████▋ | 730000/846180 [30:40:10<4:20:25,  7.44it/s]
+228782it [30:28:28, 24.03it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-730000
+{'eval_loss': 0.019913019612431526, 'eval_accuracy': 0.7533661806068102, 'epoch': 25.88}
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-730000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-730000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-680000] due to args.save_total_limit
+ 86%|████████▋ | 730072/846180 [30:40:22<4:28:05,  7.22it/s]
+
+{'loss': 0.0163, 'learning_rate': 6.569524214706091e-05, 'epoch': 26.06}
+ 87%|████████▋ | 735000/846180 [30:53:20<4:45:06,  6.50it/s]
+230349it [30:41:38, 21.61it/s]{'eval_loss': 0.01994878426194191, 'eval_accuracy': 0.7543436197163432, 'epoch': 26.06}
+ 87%|████████▋ | 735080/846180 [30:53:32<5:40:33,  5.44it/s]
+
+ 87%|████████▋ | 740000/846180 [31:04:46<4:10:13,  7.07it/s]
+230349it [30:53:04, 21.61it/s]{'loss': 0.0161, 'learning_rate': 6.27407880120069e-05, 'epoch': 26.24}
+ 87%|████████▋ | 740000/846180 [31:05:47<4:10:13,  7.07it/s]
+231916it [30:54:05, 25.00it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-740000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-740000\config.json
+{'eval_loss': 0.01993475668132305, 'eval_accuracy': 0.7554606929843809, 'epoch': 26.24}
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-740000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-690000] due to args.save_total_limit
+ 87%|████████▋ | 740117/846180 [31:06:03<3:33:43,  8.27it/s]
+
+ 88%|████████▊ | 745000/846180 [31:17:00<3:33:03,  7.91it/s]
+231916it [31:05:17, 25.00it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0161, 'learning_rate': 5.97863338769529e-05, 'epoch': 26.41}
+ 88%|████████▊ | 745000/846180 [31:18:01<3:33:03,  7.91it/s]
+233483it [31:06:19, 24.84it/s]{'eval_loss': 0.019997362047433853, 'eval_accuracy': 0.7551215814565837, 'epoch': 26.41}
+ 88%|████████▊ | 745089/846180 [31:18:13<5:35:59,  5.01it/s]
+
+{'loss': 0.0162, 'learning_rate': 5.683187974189889e-05, 'epoch': 26.59}
+ 89%|████████▊ | 750000/846180 [31:29:29<3:00:26,  8.88it/s]
+  89%|████████▊ | 750000/846180 [31:30:30<3:00:26,  8.88it/s]
+235050it [31:18:48, 25.05it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-750000
+{'eval_loss': 0.019875310361385345, 'eval_accuracy': 0.7559793341445413, 'epoch': 26.59}
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-750000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-750000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-700000] due to args.save_total_limit
+ 89%|████████▊ | 750109/846180 [31:30:44<3:08:38,  8.49it/s]
+
+ 89%|████████▉ | 755000/846180 [31:41:51<3:37:43,  6.98it/s]
+235050it [31:30:09, 25.05it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0162, 'learning_rate': 5.387742560684488e-05, 'epoch': 26.77}
+
+{'eval_loss': 0.01990697905421257, 'eval_accuracy': 0.7560192296183998, 'epoch': 26.77}
+ 89%|████████▉ | 755000/846180 [31:42:53<3:37:43,  6.98it/s]
+ 89%|████████▉ | 755094/846180 [31:43:05<2:44:53,  9.21it/s]
+
+{'loss': 0.0161, 'learning_rate': 5.0922971471790874e-05, 'epoch': 26.94}
+ 90%|████████▉ | 760000/846180 [31:54:10<3:21:14,  7.14it/s]
+ {'eval_loss': 0.019733851775527, 'eval_accuracy': 0.7557200135644611, 'epoch': 26.94}
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\best_cp-760000\pytorch_model.bin
+Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-760000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-760000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-760000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-710000] due to args.save_total_limit
+ 90%|████████▉ | 760108/846180 [31:55:26<5:22:28,  4.45it/s]
+
+ 90%|█████████ | 765000/846180 [32:06:32<3:23:15,  6.66it/s]
+238184it [31:54:50, 24.88it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0158, 'learning_rate': 4.7968517336736864e-05, 'epoch': 27.12}
+ 90%|█████████ | 765000/846180 [32:07:33<3:23:15,  6.66it/s]
+239751it [31:55:51, 25.03it/s]{'eval_loss': 0.019865091890096664, 'eval_accuracy': 0.7551215814565837, 'epoch': 27.12}
+ 90%|█████████ | 765100/846180 [32:07:47<3:46:55,  5.95it/s]
+
+{'loss': 0.0159, 'learning_rate': 4.501406320168286e-05, 'epoch': 27.3}
+ 91%|█████████ | 770000/846180 [32:18:50<2:42:14,  7.83it/s]
+
+{'eval_loss': 0.01992596872150898, 'eval_accuracy': 0.7552811633520177, 'epoch': 27.3}
+ 91%|█████████ | 770000/846180 [32:19:51<2:42:14,  7.83it/s]
+241318it [32:08:09, 24.89it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-770000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-770000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-770000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-720000] due to args.save_total_limit
+ 91%|█████████ | 770121/846180 [32:20:07<2:55:26,  7.23it/s]
+
+ 92%|█████████▏| 775000/846180 [32:31:09<2:27:51,  8.02it/s]
+241318it [32:19:27, 24.89it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0157, 'learning_rate': 4.2059609066628856e-05, 'epoch': 27.48}
+{'eval_loss': 0.019792791455984116, 'eval_accuracy': 0.7562187069876922, 'epoch': 27.48}
+ 92%|█████████▏| 775000/846180 [32:32:10<2:27:51,  8.02it/s]
+ 92%|█████████▏| 775127/846180 [32:32:28<2:38:20,  7.48it/s]
+
+ 92%|█████████▏| 780000/846180 [32:43:32<2:24:23,  7.64it/s]
+242885it [32:31:50, 25.38it/s]{'loss': 0.0157, 'learning_rate': 3.9105154931574845e-05, 'epoch': 27.65}
+ 92%|█████████▏| 780000/846180 [32:44:34<2:24:23,  7.64it/s]
+244452it [32:32:51, 24.74it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-780000
+{'eval_loss': 0.019945133477449417, 'eval_accuracy': 0.7563982366200555, 'epoch': 27.65}
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-780000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-780000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-730000] due to args.save_total_limit
+ 92%|█████████▏| 780112/846180 [32:44:49<2:15:02,  8.15it/s]
+
+ 93%|█████████▎| 785000/846180 [32:55:56<3:19:09,  5.12it/s]
+244452it [32:44:14, 24.74it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+  {'eval_loss': 0.019796347245573997, 'eval_accuracy': 0.7561788115138337, 'epoch': 27.83}
+ 93%|█████████▎| 785000/846180 [32:56:57<3:19:09,  5.12it/s]
+ 93%|█████████▎| 785089/846180 [32:57:09<2:00:00,  8.48it/s]
+
+ 93%|█████████▎| 790000/846180 [33:08:17<1:52:40,  8.31it/s]
+246019it [32:56:34, 24.97it/s]{'loss': 0.0158, 'learning_rate': 3.3196246661466824e-05, 'epoch': 28.01}
+{'eval_loss': 0.019678380340337753, 'eval_accuracy': 0.7562386547246215, 'epoch': 28.01}
+ 93%|█████████▎| 790000/846180 [33:09:18<1:52:40,  8.31it/s]
+247586it [32:57:36, 24.97it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\best_cp-790000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\best_cp-790000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\best_cp-790000\pytorch_model.bin
+Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-790000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-790000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-790000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-740000] due to args.save_total_limit
+ 93%|█████████▎| 790088/846180 [33:09:30<1:51:16,  8.40it/s]
+
+ 94%|█████████▍| 795000/846180 [33:20:38<1:55:45,  7.37it/s]
+247586it [33:08:56, 24.97it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0154, 'learning_rate': 3.024179252641282e-05, 'epoch': 28.19}
+{'eval_loss': 0.019789692014455795, 'eval_accuracy': 0.756438132093914, 'epoch': 28.19}
+ 94%|█████████▍| 795000/846180 [33:21:39<1:55:45,  7.37it/s]
+ 94%|█████████▍| 795087/846180 [33:21:51<2:01:55,  6.98it/s]
+
+ 95%|█████████▍| 800000/846180 [33:32:59<1:37:39,  7.88it/s]
+249153it [33:21:17, 25.48it/s]{'loss': 0.0155, 'learning_rate': 2.7287338391358813e-05, 'epoch': 28.36}
+ 95%|█████████▍| 800000/846180 [33:34:00<1:37:39,  7.88it/s]
+250720it [33:22:18, 24.93it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-800000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-800000\config.json
+{'eval_loss': 0.019902504980564117, 'eval_accuracy': 0.7578743691528196, 'epoch': 28.36}
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-800000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-750000] due to args.save_total_limit
+ 95%|█████████▍| 800084/846180 [33:34:12<1:37:44,  7.86it/s]
+
+ 95%|█████████▌| 805000/846180 [33:45:18<1:15:59,  9.03it/s]
+250720it [33:33:35, 24.93it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0155, 'learning_rate': 2.4332884256304806e-05, 'epoch': 28.54}
+ 95%|█████████▌| 805000/846180 [33:46:19<1:15:59,  9.03it/s]
+252287it [33:34:37, 24.98it/s]{'eval_loss': 0.019759302958846092, 'eval_accuracy': 0.7569966687279328, 'epoch': 28.54}
+ 95%|█████████▌| 805097/846180 [33:46:32<1:55:00,  5.95it/s]
+
+ 96%|█████████▌| 810000/846180 [33:57:38<1:15:22,  8.00it/s]
+252287it [33:45:56, 24.98it/s]{'loss': 0.0155, 'learning_rate': 2.13784301212508e-05, 'epoch': 28.72}
+{'eval_loss': 0.019844848662614822, 'eval_accuracy': 0.7568969300432866, 'epoch': 28.72}
+ 96%|█████████▌| 810000/846180 [33:58:39<1:15:22,  8.00it/s]
+253854it [33:46:57, 25.40it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-810000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-810000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-810000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-760000] due to args.save_total_limit
+ 96%|█████████▌| 810102/846180 [33:58:53<1:32:29,  6.50it/s]
+
+{'loss': 0.0154, 'learning_rate': 1.842397598619679e-05, 'epoch': 28.89}
+{'eval_loss': 0.019693613052368164, 'eval_accuracy': 0.7572759370449422, 'epoch': 28.89}
+ 96%|█████████▋| 815000/846180 [34:11:01<1:14:07,  7.01it/s]
+ 96%|█████████▋| 815095/846180 [34:11:14<1:09:32,  7.45it/s]
+
+ 97%|█████████▋| 820000/846180 [34:22:16<53:41,  8.13it/s]
+255421it [34:10:33, 24.99it/s]{'loss': 0.0155, 'learning_rate': 1.5469521851142784e-05, 'epoch': 29.07}
+{'eval_loss': 0.019806355237960815, 'eval_accuracy': 0.757255989308013, 'epoch': 29.07}
+ 97%|█████████▋| 820000/846180 [34:23:17<53:41,  8.13it/s]
+256988it [34:11:35, 24.97it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-820000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-820000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-820000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-770000] due to args.save_total_limit
+ 97%|█████████▋| 820134/846180 [34:23:34<48:59,  8.86it/s]
+
+ 97%|█████████▋| 825000/846180 [34:34:40<54:16,  6.50it/s]
+256988it [34:22:58, 24.97it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0153, 'learning_rate': 1.2515067716088775e-05, 'epoch': 29.25}
+{'eval_loss': 0.019739024341106415, 'eval_accuracy': 0.7571363028864375, 'epoch': 29.25}
+ 97%|█████████▋| 825000/846180 [34:35:41<54:16,  6.50it/s]
+ 98%|█████████▊| 825105/846180 [34:35:55<46:51,  7.49it/s]
+
+{'loss': 0.0153, 'learning_rate': 9.560613581034768e-06, 'epoch': 29.43}
+ 98%|█████████▊| 830000/846180 [34:47:01<32:26,  8.31it/s]
+ {'eval_loss': 0.01970095746219158, 'eval_accuracy': 0.7574155712034469, 'epoch': 29.43}
+ 98%|█████████▊| 830000/846180 [34:48:02<32:26,  8.31it/s]
+260122it [34:36:20, 25.04it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-830000
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-830000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-830000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-780000] due to args.save_total_limit
+ 98%|█████████▊| 830099/846180 [34:48:16<33:45,  7.94it/s]
+
+{'loss': 0.0153, 'learning_rate': 6.6061594459807605e-06, 'epoch': 29.6}
+ 99%|█████████▊| 835000/846180 [34:59:20<25:14,  7.38it/s]
+
+ 99%|█████████▊| 835000/846180 [35:00:21<25:14,  7.38it/s]
+261689it [34:48:39, 25.00it/s]{'eval_loss': 0.019787423312664032, 'eval_accuracy': 0.7569168777802159, 'epoch': 29.6}
+ 99%|█████████▊| 835110/846180 [35:00:37<27:21,  6.75it/s]
+
+{'loss': 0.0151, 'learning_rate': 3.6517053109267533e-06, 'epoch': 29.78}
+ 99%|█████████▉| 840000/846180 [35:11:40<15:07,  6.81it/s]
+  99%|█████████▉| 840000/846180 [35:12:41<15:07,  6.81it/s]
+263256it [35:00:59, 25.30it/s]Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword\checkpoint-840000
+{'eval_loss': 0.019784288480877876, 'eval_accuracy': 0.756936825517145, 'epoch': 29.78}
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-840000\config.json
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\checkpoint-840000\pytorch_model.bin
+Deleting older checkpoint [checkpoints\USPTO-Schwaller-Subword\checkpoint-790000] due to args.save_total_limit
+ 99%|█████████▉| 840112/846180 [35:12:57<14:11,  7.12it/s]
+
+100%|█████████▉| 845000/846180 [35:24:03<02:37,  7.48it/s]
+263256it [35:12:21, 25.30it/s]D:\anaconda\envs\zlx\lib\site-packages\transformers\trainer_pt_utils.py:376: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+{'loss': 0.0151, 'learning_rate': 6.972511758727457e-07, 'epoch': 29.96}
+{'eval_loss': 0.019757889211177826, 'eval_accuracy': 0.7571562506233668, 'epoch': 29.96}
+100%|█████████▉| 845000/846180 [35:25:04<02:37,  7.48it/s]
+100%|█████████▉| 845110/846180 [35:25:18<02:24,  7.40it/s]
+100%|██████████| 846180/846180 [35:27:43<00:00,  8.32it/s]
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+
+100%|██████████| 846180/846180 [35:27:43<00:00,  8.32it/s]
+100%|██████████| 846180/846180 [35:27:43<00:00,  6.63it/s]
+Saving model checkpoint to checkpoints/USPTO-Schwaller-Subword
+Configuration saved in checkpoints/USPTO-Schwaller-Subword\config.json
+{'train_runtime': 127663.2327, 'train_samples_per_second': 212.1, 'train_steps_per_second': 6.628, 'train_loss': 0.025701691634422433, 'epoch': 30.0}
+Namespace(batch_size=32, data_dir='data/Datasets/USPTO-Schwaller-Subword', init_lr=0.0005, log_step=5000, num_classes=None, num_epoch=30, output_dir='checkpoints/USPTO-Schwaller-Subword', pretrain='model/pretrain/simple', random_seed=8570, task_type='product', tokenizer='', vocab='')
+logging dir: checkpoints/USPTO-Schwaller-Subword\runs\Apr15_16-21-21_PC-20231207DXQY
+Model weights saved in checkpoints/USPTO-Schwaller-Subword\pytorch_model.bin
