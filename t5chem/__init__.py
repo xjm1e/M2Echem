@@ -6,7 +6,7 @@ from .mol_tokenizers import (AtomTokenizer, MolTokenizer, SelfiesTokenizer,
                              SimpleTokenizer)
 from .trainer import EarlyStopTrainer
 
-__author__ = 'Jocelyn Lu <jl8570@nyu.edu>'
+# __author__ = 'Jocelyn Lu <jl8570@nyu.edu>'
 __all__: list = [
     "TaskPrefixDataset",
     "data_collator",
@@ -18,3 +18,5 @@ __all__: list = [
     "SimpleTokenizer",
     "EarlyStopTrainer",
 ]
+# '''它明确指定了哪些类和函数可以在模块外部通过通配符导入的方式访问和使用。
+# 这样做的好处是，它提供了一种方式来控制模块的命名空间，使得代码更加清晰和可维护。'''

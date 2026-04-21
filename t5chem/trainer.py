@@ -86,8 +86,8 @@ class EarlyStopTrainer(Trainer):
         for step, inputs in enumerate(dataloader):
             loss, logits, labels = self.prediction_step(model, inputs, prediction_loss_only, ignore_keys=ignore_keys)
             if loss is not None:
-                losses = loss.repeat(batch_size) # type: ignore
-                losses_host = losses if losses_host is None else torch.cat((losses_host, losses), dim=0) # type: ignore
+                losses = loss.repeat(batch_size)  # type: ignore
+                losses_host = losses if losses_host is None else torch.cat((losses_host, losses), dim=0)  # type: ignore
             if logits is not None:
                 # preds_host = logits if preds_host is None else nested_concat(preds_host, logits, padding_index=-100)
                 logits = logits[0]

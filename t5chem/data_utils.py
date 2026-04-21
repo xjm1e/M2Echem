@@ -76,8 +76,23 @@ class TaskPrefixDataset(Dataset):
         self.prefix: str = prefix
         self._source_path: str = os.path.join(data_dir, type_path + ".source")
         self._target_path: str = os.path.join(data_dir, type_path + ".target")
-        self._len_source: int = int(subprocess.check_output("wc -l " + self._source_path, shell=True).split()[0])
-        self._len_target: int = int(subprocess.check_output("wc -l " + self._target_path, shell=True).split()[0])
+        # self._len_source: int = int(subprocess.check_output("wc -l " + self._source_path, shell=True).split()[0])
+
+        try:
+            with open(self._source_path, 'r', encoding='utf-8') as f:
+                self._len_source = sum(1 for _ in f)
+        except FileNotFoundError:
+            print(f"Error: Source file {self._source_path} not found.")
+            self._len_source = 0
+
+        # self._len_target: int = int(subprocess.check_output("wc -l " + self._target_path, shell=True).split()[0])
+        try:
+            with open(self._target_path, 'r', encoding='utf-8') as f:
+                self._len_target = sum(1 for _ in f)
+        except FileNotFoundError:
+            print(f"Error: Target file {self._target_path} not found.")
+            self._len_target = 0
+
         assert self._len_source == self._len_target, "Source file and target file don't match!"
         self.tokenizer: PreTrainedTokenizer = tokenizer
         self.max_source_len: int = max_source_length

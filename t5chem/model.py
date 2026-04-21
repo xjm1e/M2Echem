@@ -29,6 +29,8 @@ class T5ForProperty(T5ForConditionalGeneration):
         r"decoder\.block\.0\.layer\.1\.EncDecAttention\.relative_attention_bias\.weight",
         r"lm_head\.weight",
     ]
+
+    # A constructor for a Python class that takes four arguments
     def __init__(
         self, 
         config: T5Config, 
@@ -37,8 +39,12 @@ class T5ForProperty(T5ForConditionalGeneration):
         num_classes: Optional[int]=None,
         ) -> None:
         super().__init__(config)
+        # passing the config argument to the constructor of the parent class
+
         self.head_type = head_type if head_type else getattr(config, "head_type", None)
         n_layer = n_layer if n_layer else getattr(config, "n_layer", 0)
+        # Determines the value of head_type and n_layer
+
         lm_head_layers: List[nn.Module] = []
         unit_layer: List[nn.Module] = [
                 nn.Linear(config.d_model, config.d_model),

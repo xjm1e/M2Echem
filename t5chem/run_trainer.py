@@ -10,23 +10,25 @@ import torch
 from transformers import (DataCollatorForLanguageModeling, T5Config,
                           T5ForConditionalGeneration, TrainingArguments)
 
-from .data_utils import (AccuracyMetrics, CalMSELoss, LineByLineTextDataset,
-                        T5ChemTasks, TaskPrefixDataset, TaskSettings,
-                        data_collator)
-from .model import T5ForProperty
-from .mol_tokenizers import (AtomTokenizer, MolTokenizer, SelfiesTokenizer,
+from data_utils_origin import (AccuracyMetrics, CalMSELoss, LineByLineTextDataset,
+                               T5ChemTasks, TaskPrefixDataset, TaskSettings,
+                               data_collator)
+from model import T5ForProperty
+from mol_tokenizers import (AtomTokenizer, MolTokenizer, SelfiesTokenizer,
                             SimpleTokenizer)
-from .trainer import EarlyStopTrainer
+from trainer import EarlyStopTrainer
 
 tokenizer_map: Dict[str, MolTokenizer] = {
-    'simple': SimpleTokenizer,  # type: ignore
-    'atom': AtomTokenizer,  # type: ignore
-    'selfies': SelfiesTokenizer,    # type: ignore
+    'simple': SimpleTokenizer,
+    'atom': AtomTokenizer,
+    'selfies': SelfiesTokenizer,
 }
 
 
+# 该函数用于向命令行解析器中添加不同的命令行参数
 def add_args(parser):
     parser.add_argument(
+        # '''添加一个名为--data_dir的命令行参数，类型为字符串，必需参数。用于指定输入数据的目录路径，其中包含了训练、验证和测试数据的文件'''
         "--data_dir",
         type=str,
         required=True,
@@ -37,6 +39,7 @@ def add_args(parser):
         type=str,
         required=True,
         help="The output directory where the model predictions and checkpoints will be written.",
+        # 用于指定模型预测结果和训练检查点将被保存的输出目录路径
     )
     parser.add_argument(
         "--task_type",
@@ -44,62 +47,80 @@ def add_args(parser):
         required=True,
         help="Task type to use. ('product', 'reactants', 'reagents', \
             'regression', 'classification', 'pretrain', 'mixed')",
+        # 用于指定要执行的任务类型，可以是上述提供的几种任务类型之一
     )
     parser.add_argument(
         "--pretrain",
         default='',
         help="Path to a pretrained model. If not given, we will train from scratch",
+        # 添加一个名为--pretrain的命令行参数，如果未提供，默认为空字符串。用于指定预训练模型的路径，如果不提供路径，则表示从头开始训练模型
     )
     parser.add_argument(
         "--vocab",
         default='',
         help="Vocabulary file to load.",
+        # 添加一个名为--vocab的命令行参数，如果未提供，默认为空字符串。用于指定要加载的词汇文件的路径
     )
     parser.add_argument(
         "--tokenizer",
         default='',
         help="Tokenizer to use. ('simple', 'atom', 'selfies')",
+        # 用于指定要使用的分词器类型，可以是上述提供的几种分词器之一
     )
+
     parser.add_argument(
         "--random_seed",
         default=8570,
         type=int,
         help="The random seed for model initialization",
+        # 添加一个名为--random_seed的命令行参数，如果未提供，默认值为8570。用于指定模型初始化时的随机种子
     )
+
     parser.add_argument(
         "--num_epoch",
         default=100,
         type=int,
         help="Number of epochs for training.",
+        # 训练轮数
     )
+
     parser.add_argument(
         "--log_step",
         default=5000,
         type=int,
         help="Logging after every log_step",
+        # 用于指定记录日志的步长
     )
+
     parser.add_argument(
         "--batch_size",
         default=32,
         type=int,
         help="Batch size for training and validation.",
+        # 训练和验证时的批量大小
     )
+
     parser.add_argument(
         "--init_lr",
         default=5e-4,
         type=float,
         help="The initial leanring rate for model training",
+        # 模型训练的初始学习率
     )
+
     parser.add_argument(
         "--num_classes",
         type=int,
         help="The number of classes in classification task. Only used when task_type is Classification",
+        # 分类任务中的类别数量，仅在任务类型为分类时使用
     )
 
 
+# 用于训练一个深度学习模型
 def train(args):
-    print(args)
     torch.cuda.manual_seed(args.random_seed)
+    # 这行代码设置PyTorch的随机种子，以确保在使用GPU进行训练时结果的可重复性
+
     np.random.seed(args.random_seed)
     torch.manual_seed(args.random_seed)
     # this one is needed for torchtext random call (shuffled iterator)
@@ -108,13 +129,19 @@ def train(args):
     # some cudnn methods can be random even after fixing the seed
     # unless you tell it to be deterministic
     torch.backends.cudnn.deterministic = True
+    # 设置不同的随机种子，以确保在不同的随机操作中结果的可重复性
 
     assert args.task_type in T5ChemTasks, \
         "only {} are currenly supported, but got {}".\
             format(tuple(T5ChemTasks.keys()), args.task_type)
     task: TaskSettings = T5ChemTasks[args.task_type]
 
-    if args.pretrain: # retrieve information from pretrained model
+# 这行代码检查参数args中的任务类型是否在预定义的任务列表中（T5ChemTasks）。如果不在列表中，会抛出一个断言错误
+
+# '''接下来的代码根据不同的情况，初始化模型、分词器（tokenizer）和相关配置。如果使用预训练模型，会加载预训练模型和相应的分词器。
+# 如果从头开始训练，会根据指定的分词器类型创建新的分词器和模型'''
+
+    if args.pretrain:
         if task.output_layer == 'seq2seq':
             model = T5ForConditionalGeneration.from_pretrained(args.pretrain)
         else:
@@ -163,7 +190,10 @@ def train(args):
         else:
             model = T5ForProperty(config, head_type=task.output_layer, num_classes=args.num_classes)
 
+
+
     os.makedirs(args.output_dir, exist_ok=True)
+    # 这行代码创建一个输出目录，用于保存训练过程中的模型和日志等文件
     tokenizer.save_vocabulary(os.path.join(args.output_dir, 'vocab.pt'))
     if args.task_type == 'pretrain':
         dataset = LineByLineTextDataset(
@@ -176,7 +206,7 @@ def train(args):
             tokenizer=tokenizer, mlm=True, mlm_probability=0.15
         )
     else:
-        dataset = TaskPrefixDataset(
+        dataset = TaskPrefixDataset(  # True
             tokenizer, 
             data_dir=args.data_dir,
             prefix=task.prefix,
@@ -224,8 +254,9 @@ def train(args):
         compute_metrics = None  
         # We don't want any extra metrics for faster pretraining
     else:
-        compute_metrics = AccuracyMetrics
+        compute_metrics = AccuracyMetrics  # true
 
+# 训练参数匹配
     training_args = TrainingArguments(
         output_dir=args.output_dir,
         overwrite_output_dir=True,
@@ -241,6 +272,7 @@ def train(args):
         prediction_loss_only=(compute_metrics is None),
     )
 
+# 训练的调用的函数
     trainer = EarlyStopTrainer(
         model=model,
         args=training_args,
