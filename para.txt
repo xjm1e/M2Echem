@@ -1,1 +1,0 @@
---data_dir data/Datasets/USPTO_MIT/MIT_separated --output_dir checkpoints/MIT_separated --task_type product --num_epoch 30 --pretrain checkpoints/simple_MIT_separated/best_cp-345000
